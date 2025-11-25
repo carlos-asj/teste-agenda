@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
   "dependencies": {
     "next": "^16.0.4",
     "react": "^19.2.0",
