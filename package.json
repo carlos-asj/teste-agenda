@@ -1,6 +1,8 @@
 {
   "scripts": {
     "dev": "next dev",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write ."
   },
@@ -8,5 +10,8 @@
     "next": "^16.0.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
   }
 }
