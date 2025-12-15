@@ -1,9 +1,9 @@
-import database from "../../../../infra/sum.js";
+import database from "infra/database.js";
 
-async function status(request, response) {
-  const updatedAt = new Date();
+async function status(req, res) {
+  const updatedAt = new Date().toISOString();
 
-  response.status(200).json({
+  res.status(200).json({
     updated_at: updatedAt,
   });
 }
